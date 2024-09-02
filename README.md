@@ -47,7 +47,7 @@ python train.py
 - The model will automatically save the predictions in submission.csv.
 
 ## Data
-- The dataset consists of texts labeled as either AI-generated or human-written. The dataset used for training and testing is assumed to be in the data/ directory. Update the paths in the code if your dataset is located elsewhere.
+- The dataset consists of texts labeled as either AI-generated or human-written. The dataset used for training and testing is assumed to be in the data directory. Update the paths in the code if your dataset is located elsewhere.
 
 ## How It Works
 - **Data Preparation**: Text data is read, preprocessed, and tokenized.
