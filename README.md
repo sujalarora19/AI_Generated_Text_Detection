@@ -25,45 +25,44 @@ Ensure you have the following libraries installed:
 - `numpy` for numerical operations.
 - `catboost` for gradient boosting on decision trees.
 
+## How to Use
+
 Install all required packages using pip:
 
-
-##How to Use
-
-###Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/yourusername/real-time-text-classification.git
 cd real-time-text-classification
 ```
-###Prepare Your Environment 
+### Prepare Your Environment 
 - Ensure all dependencies are installed.
-###Train the Model
+### Train the Model
 - Update the dataset paths in the script if necessary.
 - Run the training script:
 ```bash
 python train.py
 ```
-###Make Predictions:
+### Make Predictions:
 
 - The model will automatically save the predictions in submission.csv.
 
-##Data
+## Data
 - The dataset consists of texts labeled as either AI-generated or human-written. The dataset used for training and testing is assumed to be in the data/ directory. Update the paths in the code if your dataset is located elsewhere.
 
-##How It Works
+## How It Works
 - **Data Preparation**: Text data is read, preprocessed, and tokenized.
 - **Feature Extraction**: Uses TF-IDF to transform text data into feature vectors.
 - **Model Training**: Multiple models are trained, and an ensemble model is created.
 - **Prediction**: The ensemble model is used to predict the probability of a text being AI-generated.
 
-##Important Notes
+## Important Notes
 - **Model Parameters**: Hyperparameters for the models can be fine-tuned for better performance.
 - **Performance Metrics**: Evaluation is based on AUC-ROC scores.
 - **Ensemble Weights**: Adjust weights for each model in the ensemble for optimal results.
 
-##License
+## License
 - This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Acknowledgments
+## Acknowledgments
 - Thanks to the developers of all open-source libraries and tools used in this project.
 - Special thanks to the Kaggle community for providing the datasets.
